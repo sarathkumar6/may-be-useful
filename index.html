@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>May Be Useful</title>
+  <meta name="description" content="Notes to myself on health, life, and growing older -- shared in case they help someone else." />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #555555;
+      --line: #dddddd;
+      --accent: #0645ad;
+      --accent-visited: #551a8b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Verdana, Geneva, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 34px 18px 18px;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 14px;
+      font-size: 14px;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    nav a:visited {
+      color: var(--accent-visited);
+    }
+
+    nav a:hover {
+      color: #000000;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 18px 36px;
+    }
+
+    .hero {
+      padding: 0 0 28px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 1.12;
+      margin: 0 0 18px;
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      line-height: 1.5;
+      color: var(--text);
+      margin-bottom: 18px;
+      font-weight: 400;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+    }
+
+    .sections {
+      border-top: 1px solid var(--line);
+      padding-top: 22px;
+      display: block;
+    }
+
+    .card {
+      padding: 0 0 22px;
+      margin: 0 0 22px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .card h2 {
+      margin: 0 0 6px;
+      font-size: 24px;
+      letter-spacing: 0;
+      font-weight: 700;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 22px 18px 42px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 760px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        gap: 6px 12px;
+      }
+
+      main {
+        padding-top: 28px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .subtitle {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">May Be Useful</div>
+    <nav aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#health">Health</a>
+      <a href="#life-lessons">Lessons</a>
+      <a href="#your-80s">80s and Beyond</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="eyebrow">Notes to myself</div>
+      <h1>May Be Useful</h1>
+      <div class="subtitle">
+        A personal collection of notes on health, life, and growing older -- written for myself, shared in case it helps someone else.
+      </div>
+      <p class="note">
+        This is not advice from an expert. It is a place to collect lessons, reminders, mistakes, observations, and practical thoughts I may want to remember later in life.
+      </p>
+    </section>
+
+    <section class="sections" aria-label="Topics">
+      <article class="card" id="health">
+        <h2>Health</h2>
+        <p>Mental and physical health notes: food, movement, sleep, stress, habits, and small choices that compound over time.</p>
+      </article>
+
+      <article class="card" id="life-lessons">
+        <h2>Lessons</h2>
+        <p>Lessons learned the hard way, reminders worth keeping, and ideas that may help make better decisions.</p>
+      </article>
+
+      <article class="card" id="your-80s">
+        <h2>80s and Beyond</h2>
+        <p>Thinking ahead about independence, dignity, loneliness, money, health, relationships, and what it means to be on your own later in life.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2026 May Be Useful. Personal notes, shared quietly.
+  </footer>
+</body>
+</html>
