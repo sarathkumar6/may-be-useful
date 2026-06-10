@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>May Be Useful</title>
-  <meta name="description" content="Notes to myself on health, life, and growing older -- shared in case they help someone else." />
+  <meta name="description" content="Notes and practical ideas that may be useful for protecting family wealth and making better life decisions." />
   <style>
     :root {
       --bg: #ffffff;
@@ -47,119 +47,92 @@
 
     nav {
       display: flex;
+      gap: 14px;
       flex-wrap: wrap;
-      gap: 6px 14px;
       font-size: 14px;
     }
 
-    nav a {
+    a {
       color: var(--accent);
       text-decoration: underline;
-      text-underline-offset: 2px;
     }
 
-    nav a:visited {
+    a:visited {
       color: var(--accent-visited);
-    }
-
-    nav a:hover {
-      color: #000000;
     }
 
     main {
       max-width: 720px;
       margin: 0 auto;
-      padding: 32px 18px 36px;
+      padding: 42px 18px 64px;
     }
 
-    .hero {
-      padding: 0 0 28px;
+    .intro {
+      margin-bottom: 46px;
     }
 
-    .eyebrow {
-      font-size: 13px;
+    .kicker {
       color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 8px;
+      font-size: 14px;
+      margin-bottom: 10px;
     }
 
     h1 {
-      font-size: 40px;
-      line-height: 1.12;
+      font-size: clamp(34px, 7vw, 56px);
+      line-height: 1.05;
       margin: 0 0 18px;
-      letter-spacing: 0;
+      letter-spacing: -0.04em;
       font-weight: 700;
     }
 
     .subtitle {
-      font-size: 18px;
-      line-height: 1.5;
-      color: var(--text);
-      margin-bottom: 18px;
-      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.45;
+      margin: 0 0 18px;
+      max-width: 660px;
     }
 
-    .note {
+    .small-note {
       color: var(--muted);
-      font-size: 15px;
-      margin: 0;
+      font-size: 14px;
+      max-width: 620px;
     }
 
-    .sections {
+    section {
       border-top: 1px solid var(--line);
-      padding-top: 22px;
-      display: block;
+      padding: 28px 0;
     }
 
-    .card {
-      padding: 0 0 22px;
-      margin: 0 0 22px;
-      border-bottom: 1px solid var(--line);
+    h2 {
+      font-size: 22px;
+      margin: 0 0 10px;
+      letter-spacing: -0.02em;
     }
 
-    .card h2 {
-      margin: 0 0 6px;
-      font-size: 24px;
-      letter-spacing: 0;
-      font-weight: 700;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 16px;
+    p {
+      margin: 0 0 12px;
     }
 
     footer {
       max-width: 720px;
       margin: 0 auto;
-      padding: 22px 18px 42px;
+      padding: 28px 18px 44px;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 13px;
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 620px) {
       header {
-        align-items: flex-start;
-        flex-direction: column;
+        display: block;
       }
 
       nav {
-        gap: 6px 12px;
-      }
-
-      main {
-        padding-top: 28px;
-      }
-
-      h1 {
-        font-size: 34px;
+        margin-top: 14px;
       }
 
       .subtitle {
-        font-size: 17px;
+        font-size: 18px;
       }
     }
   </style>
@@ -169,44 +142,46 @@
     <div class="brand">May Be Useful</div>
     <nav aria-label="Primary navigation">
       <a href="#about">About</a>
-      <a href="#health">Health</a>
-      <a href="#life-lessons">Lessons</a>
-      <a href="#your-80s">80s and Beyond</a>
+      <a href="#wealth-protection">Wealth Protection</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="about">
-      <div class="eyebrow">Notes to myself</div>
+    <section class="intro" id="about">
+      <div class="kicker">Notes to myself</div>
       <h1>May Be Useful</h1>
-      <div class="subtitle">
-        A personal collection of notes on health, life, and growing older -- written for myself, shared in case it helps someone else.
-      </div>
-      <p class="note">
-        This is not advice from an expert. It is a place to collect lessons, reminders, mistakes, observations, and practical thoughts I may want to remember later in life.
+      <p class="subtitle">
+        A personal collection of notes, lessons, and practical ideas —
+        written for myself, shared in case it helps someone else.
+      </p>
+      <p class="small-note">
+        This is not advice from an expert. It is a place to collect lessons,
+        reminders, mistakes, observations, and practical thoughts I may want
+        to remember later in life.
       </p>
     </section>
 
-    <section class="sections" aria-label="Topics">
-      <article class="card" id="health">
-        <h2>Health</h2>
-        <p>Mental and physical health notes: food, movement, sleep, stress, habits, and small choices that compound over time.</p>
-      </article>
-
-      <article class="card" id="life-lessons">
-        <h2>Lessons</h2>
-        <p>Lessons learned the hard way, reminders worth keeping, and ideas that may help make better decisions.</p>
-      </article>
-
-      <article class="card" id="your-80s">
-        <h2>80s and Beyond</h2>
-        <p>Thinking ahead about independence, dignity, loneliness, money, health, relationships, and what it means to be on your own later in life.</p>
-      </article>
+    <section id="wealth-protection">
+      <h2>Wealth Protection</h2>
+      <p>
+        Wealth Protection is about helping families in Canada understand the
+        risks that can quietly damage their hard-earned wealth — from debt
+        exposure and insurance gaps to fraud, poor documentation, medical
+        emergencies, and estate confusion.
+      </p>
+      <p>
+        The goal is simple: translate these risks in plain language and build
+        practical readiness tools that help families protect their financial
+        foundation before a crisis exposes the gaps.
+      </p>
+      <p class="small-note">
+        <a href="financial-stability-blind-spot.html">The Financial Stability Blind Spot Most of Us Overlook</a>
+      </p>
     </section>
   </main>
 
   <footer>
-    &copy; 2026 May Be Useful. Personal notes, shared quietly.
+    © 2026 May Be Useful. Personal notes, shared quietly.
   </footer>
 </body>
 </html>
